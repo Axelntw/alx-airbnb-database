@@ -31,6 +31,15 @@ This task focuses on implementing both correlated and non-correlated subqueries:
 
 The implementation can be found in the `database-adv-script/subqueries.sql` file.
 
+### 2. Use Aggregations and Window Functions
+
+This task demonstrates the use of SQL aggregation functions and window functions for data analysis:
+
+1. **Aggregation with GROUP BY**: Find the total number of bookings made by each user using COUNT function
+2. **Window Functions**: Rank properties based on the total number of bookings they have received using ROW_NUMBER and RANK
+
+The implementation can be found in the `database-adv-script/aggregations_and_window_functions.sql` file.
+
 ## Database Schema
 
 The project works with a simulated Airbnb database that includes tables for:
