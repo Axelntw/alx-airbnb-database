@@ -22,6 +22,15 @@ This task focuses on mastering SQL joins by writing complex queries using differ
 
 The implementation can be found in the `database-adv-script/joins_queries.sql` file.
 
+### 1. Write Subqueries
+
+This task focuses on implementing both correlated and non-correlated subqueries:
+
+1. **Non-correlated subquery**: Find all properties where the average rating is greater than 4.0
+2. **Correlated subquery**: Find users who have made more than 3 bookings
+
+The implementation can be found in the `database-adv-script/subqueries.sql` file.
+
 ## Database Schema
 
 The project works with a simulated Airbnb database that includes tables for:
