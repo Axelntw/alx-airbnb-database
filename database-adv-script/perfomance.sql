@@ -40,6 +40,8 @@ JOIN
     users h ON p.host_id = h.id
 JOIN 
     payments pay ON pay.booking_id = b.id
+WHERE
+    b.status = 'confirmed' AND b.check_in_date >= CURRENT_DATE
 ORDER BY 
     b.check_in_date DESC;
 
@@ -74,7 +76,7 @@ JOIN
 LEFT JOIN 
     payments pay ON pay.booking_id = b.id
 WHERE 
-    b.check_in_date >= CURRENT_DATE - INTERVAL '3 months'
+    b.check_in_date >= CURRENT_DATE - INTERVAL '3 months' AND b.status IN ('confirmed', 'completed')
 ORDER BY 
     b.check_in_date DESC
 LIMIT 100;
